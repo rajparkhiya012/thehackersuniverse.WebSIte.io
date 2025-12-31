@@ -1,0 +1,1 @@
+This is a small initiative to create a big hacker community. I am a hacker and I want that in our future people should not be threatened by hackers but should get security. For which this community has been created. In which hackers from all over the world will meet and discuss different topics and give as much knowledge as possible, so join this community.
