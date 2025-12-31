@@ -44,13 +44,25 @@ jobs:
           echo "Checking index.html..."
           test -f index.html
 
-      # Step 4: Upload static site content
+      # Step 4: Set up Ruby and build Jekyll
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+      - name: Install bundler & gems
+        run: |
+          gem install bundler
+          bundle install
+      - name: Build Jekyll site
+        run: bundle exec jekyll build -d _site
+
+      # Step 5: Upload static site content
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: .
+          path: ./_site
 
-      # Step 5: Deploy to GitHub Pages
+      # Step 6: Deploy to GitHub Pages
       - name: Deploy Blog
         id: deployment
         uses: actions/deploy-pages@v1
