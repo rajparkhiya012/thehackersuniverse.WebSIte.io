@@ -1,0 +1,6 @@
+/* Simple styles for The Hacker Community site */
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.6;margin:2rem}
+h1{color:#1a202c}
+code{background:#f4f4f4;padding:.15rem .3rem;border-radius:3px}
+main{max-width:900px;margin:0 auto}
+footer{margin-top:3rem;color:#555;font-size:.9rem}

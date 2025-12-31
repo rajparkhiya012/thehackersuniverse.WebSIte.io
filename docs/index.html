@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Hacker Community</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <h1>The Hacker Community</h1>
+    <p>Welcome! This is a simple static site for the community. Use the <a href="resume.html">Resume page</a> to add or link your resume.</p>
+
+    <section>
+      <h2>How to add your resume</h2>
+      <ol>
+        <li>Add a file named <code>resume.pdf</code> to the repository <strong>root</strong> or to the <code>docs/</code> folder.</li>
+        <li>Commit and push to your GitHub repository (example: <code>git add resume.pdf && git commit -m "Add resume" && git push</code>).</li>
+        <li>The site will be deployed automatically by GitHub Actions and your resume will be available at <code>/resume.pdf</code> (relative to the site).</li>
+      </ol>
+    </section>
+
+    <footer>
+      <p>Hosted with GitHub Pages via an automatic workflow (check <code>.github/workflows/deploy-pages.yml</code>).</p>
+    </footer>
+  </main>
+</body>
+</html>
