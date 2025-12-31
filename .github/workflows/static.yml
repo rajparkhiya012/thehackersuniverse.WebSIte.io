@@ -1,0 +1,56 @@
+# Workflow for deploying a Cybersecurity / Hacking Blog to GitHub Pages
+name: Deploy Hacking Blog to GitHub Pages
+
+on:
+  # Deploy automatically on push to main branch
+  push:
+    branches: ["main"]
+
+  # Allow manual deployment
+  workflow_dispatch:
+
+# Minimum required permissions for GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Prevent overlapping deployments
+concurrency:
+  group: "github-pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build & Deploy Blog
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # Step 1: Checkout repository
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      # Step 2: Configure GitHub Pages
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      # (Optional) Step 3: Validate blog structure
+      - name: Validate Blog Files
+        run: |
+          echo "Checking index.html..."
+          test -f index.html
+
+      # Step 4: Upload static site content
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy Blog
+        id: deployment
+        uses: actions/deploy-pages@v4
