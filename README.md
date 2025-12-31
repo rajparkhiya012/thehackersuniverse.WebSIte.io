@@ -13,3 +13,5 @@ A minimal static site has been added at `docs/` with a "Resume" page. To publish
 After the workflow runs, your site will be available at `https://<your-github-username>.github.io/<your-repo>/` and the resume at `https://<your-github-username>.github.io/<your-repo>/resume.pdf`.
 
 If you want, I can also create a sample `resume.pdf` or push these changes to your remote—tell me whether you'd like me to push.  
+
+<!-- deploy-trigger: 2025-12-31 -->
