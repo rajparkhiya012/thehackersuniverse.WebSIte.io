@@ -46,11 +46,11 @@ jobs:
 
       # Step 4: Upload static site content
       - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           path: .
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy Blog
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v1
