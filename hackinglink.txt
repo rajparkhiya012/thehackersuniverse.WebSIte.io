@@ -1,0 +1,23 @@
+LOcation hacking 
+git clone https://github.com/Viralmaniar/I-See-You.git
+step-2
+cd I-See-You
+step-3
+chmod u+x ISeeYou.sh
+step-4
+./ISeeYou.sh
+
+all hacking links and createing tools are 
+avilable on this link
+https://github.com/Z4nzu/hackingtool
+
+
+
+
+
+parfect uses
+https://github.com/LimerBoy/Impulse
+bugbounty
+https://github.com/JakobTheDev/bug-bounty
+new toolkit
+https://github.com/search?q=hacking+toolkit&type=repositories
