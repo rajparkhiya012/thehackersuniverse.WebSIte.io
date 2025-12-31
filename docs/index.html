@@ -4,24 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Hacker Community</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>The Hacker Community</h1>
-    <p>Welcome! This is a simple static site for the community. Use the <a href="resume.html">Resume page</a> to add or link your resume.</p>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/docs/">The Hacker Community</a></h1>
+      <p class="site-tagline">Learn security, share knowledge, act ethically</p>
+    </div>
+    <nav class="main-nav container">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tools.html">Tools</a>
+      <a href="resources.html">Resources</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </header>
 
-    <section>
-      <h2>How to add your resume</h2>
-      <ol>
-        <li>Add a file named <code>resume.pdf</code> to the repository <strong>root</strong> or to the <code>docs/</code> folder.</li>
-        <li>Commit and push to your GitHub repository (example: <code>git add resume.pdf && git commit -m "Add resume" && git push</code>).</li>
-        <li>The site will be deployed automatically by GitHub Actions and your resume will be available at <code>/resume.pdf</code> (relative to the site).</li>
-      </ol>
-    </section>
+  <main class="container">
+    <h1>The Hacker Community</h1>
+    <p>Welcome to The Hacker Community — a place to learn about defensive security, responsible research, and useful tools for ethical testing. New members and contributors are welcome.</p>
+
+    <h2>Quick links</h2>
+    <ul>
+      <li><a href="about.html">About — mission & contribution</a></li>
+      <li><a href="tools.html">Tools — PDFs and tool bundles</a></li>
+      <li><a href="resume.html">Resume — add your resume as <code>resume.pdf</code></a></li>
+      <li><a href="resources.html">Resources — curated links and repositories</a></li>
+    </ul>
+
+    <h2>Getting started</h2>
+    <p>Browse the pages above to find resources. If you'd like, I can add a blog, tutorials, or tag-based content organization next.</p>
 
     <footer>
-      <p>Hosted with GitHub Pages via an automatic workflow (check <code>.github/workflows/deploy-pages.yml</code>).</p>
+      <p>Hosted with GitHub Pages.</p>
     </footer>
   </main>
 </body>
