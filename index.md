@@ -5,9 +5,15 @@ title: Home
 
 # The Hacker Community
 
-Welcome! This site collects tools, resources, and community notes for ethical hacking and security learning. Use the navigation to find resources, tools, and the Resume page.
+Welcome to The Hacker Community — a place to learn about defensive security, responsible research, and useful tools for ethical testing. New members and contributors are welcome.
 
-- [About](/about/)
-- [Tools](/tools/)
-- [Resume](/resume/)
-- [Resources](/resources/)
+## Quick links
+
+- [About](/about/) — mission & contribution guidelines
+- [Tools](/tools/) — PDFs and tool bundles
+- [Resume](/resume/) — add your resume as `resume.pdf` to repo root
+- [Resources](/resources/) — curated links and repositories
+
+## Getting started
+
+Browse the pages above to find resources. If you'd like, I can add a blog, tutorials, or tag-based content organization next.
